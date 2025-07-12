@@ -35,7 +35,7 @@ employee/
 > **(Add your own screenshots here for best results!)**
 
 - **Dashboard (Desktop):**
-  ![Dashboard Desktop](screenshots/dashboard-desktop.png)
+  ![Dashboard Desktop]("C:\Users\dheer\OneDrive\Pictures\Screenshots 1\Screenshot 2025-07-12 124115.png")
 - **Add/Edit Employee Modal:**
   ![Add/Edit Modal](screenshots/add-edit-modal.png)
 - **Mobile View:**
