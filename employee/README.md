@@ -32,11 +32,14 @@ employee/
 
 ## Screenshots
 
-
+> **(Add your own screenshots here for best results!)**
 
 - **Dashboard (Desktop):**
   ![Dashboard Desktop](screenshots/dashboard-desktop.png)
-
+- **Add/Edit Employee Modal:**
+  ![Add/Edit Modal](screenshots/add-edit-modal.png)
+- **Mobile View:**
+  ![Mobile View](screenshots/mobile-view.png)
 
 ---
 
