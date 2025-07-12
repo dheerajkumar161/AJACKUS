@@ -32,7 +32,7 @@ employee/
 
 ## Screenshots
 
-> **(Add your own screenshots here for best results!)**
+
 
 - **Dashboard (Desktop):**
   ![Dashboard Desktop](screenshots/dashboard-desktop.png)
