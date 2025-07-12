@@ -36,10 +36,7 @@ employee/
 
 - **Dashboard (Desktop):**
   ![Dashboard Desktop](screenshots/dashboard-desktop.png)
-- **Add/Edit Employee Modal:**
-  ![Add/Edit Modal](screenshots/add-edit-modal.png)
-- **Mobile View:**
-  ![Mobile View](screenshots/mobile-view.png)
+
 
 ---
 
