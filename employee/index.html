@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-icon-title">
+                <i class="fa-solid fa-address-book icon"></i>
+                <h1>Employee Directory</h1>
+            </div>
+            <p class="subtitle">Manage your team with style</p>
+            <button id="theme-toggle">Toggle Theme</button>
+        </header>
+        <section class="stats">
+            <div class="stat-card">
+                <i class="fa-solid fa-user-group stat-icon"></i>
+                <div>
+                    <div class="stat-value" id="total-employees">0</div>
+                    <div class="stat-label">Total Employees</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-sitemap stat-icon"></i>
+                <div>
+                    <div class="stat-value" id="departments">0</div>
+                    <div class="stat-label">Departments</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-id-badge stat-icon"></i>
+                <div>
+                    <div class="stat-value" id="active-roles">0</div>
+                    <div class="stat-label">Active Roles</div>
+                </div>
+            </div>
+        </section>
+        <section class="controls">
+            <input type="text" id="search" placeholder="Search employees...">
+            <button id="add-employee">+ Add Employee</button>
+        </section>
+        <section class="filters">
+            <select id="department-filter">
+                <option value="">All Departments</option>
+            </select>
+            <select id="role-filter">
+                <option value="">All Roles</option>
+            </select>
+            <select id="name-filter">
+                <option value="first">First Name</option>
+                <option value="last">Last Name</option>
+            </select>
+            <select id="sort-filter">
+                <option value="az">A-Z</option>
+                <option value="za">Z-A</option>
+            </select>
+            <button id="reset-filters">Reset Filters</button>
+        </section>
+        <section id="employee-list" class="employee-list">
+            <!-- Employee cards will be rendered here by JS, now with action buttons -->
+        </section>
+        <section class="pagination">
+            <label for="per-page">Show</label>
+            <select id="per-page">
+                <option value="10" selected>10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+            </select>
+            <span>per page</span>
+            <button id="prev-page">&lt; Previous</button>
+            <span id="page-info">1</span>
+            <button id="next-page">Next &gt;</button>
+        </section>
+    </div>
+    <div id="modal-overlay" class="modal-overlay" style="display:none;">
+      <div class="modal-card">
+        <div class="modal-header">
+          <span class="modal-title"><span class="modal-title-icon"><i class="fa-solid fa-user-plus"></i></span> Add New Employee</span>
+          <button class="modal-close" id="modal-close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <form id="add-employee-form" autocomplete="off">
+          <div class="modal-row">
+            <label><i class="fa-regular fa-user"></i> First Name *</label>
+            <input type="text" id="first-name" required placeholder="Enter first name">
+          </div>
+          <div class="modal-row">
+            <label><i class="fa-regular fa-user"></i> Last Name *</label>
+            <input type="text" id="last-name" required placeholder="Enter last name">
+          </div>
+          <div class="modal-row">
+            <label><i class="fa-regular fa-envelope"></i> Email *</label>
+            <input type="email" id="email" required placeholder="Enter email address">
+          </div>
+          <div class="modal-row">
+            <label><i class="fa-solid fa-building"></i> Department *</label>
+            <div id="custom-department-dropdown"></div>
+          </div>
+          <div class="modal-row">
+            <label><i class="fa-solid fa-briefcase"></i> Role *</label>
+            <div id="custom-role-dropdown"></div>
+          </div>
+          <div class="modal-actions">
+            <button type="submit" class="modal-add-btn"><i class="fa-solid fa-user-plus"></i> Add Employee</button>
+            <button type="button" class="modal-cancel-btn" id="modal-cancel-btn">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
