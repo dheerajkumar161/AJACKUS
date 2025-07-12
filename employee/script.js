@@ -81,8 +81,7 @@ function renderStats() {
   document.getElementById('total-employees').textContent = employees.length;
   const departments = new Set(employees.map(e => e.department));
   document.getElementById('departments').textContent = departments.size;
-  const roles = new Set(employees.map(e => e.role));
-  document.getElementById('active-roles').textContent = roles.size;
+  document.getElementById('active-roles').textContent = roleList.length;
 }
 
 function renderFilters() {
